@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mvp.qpi.money</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .video-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: calc(100vh - 60px);
+            background-color: #000000;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            outline: none;
+        }
+        footer {
+            height: 60px;
+            background-color: #111111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            font-size: 14px;
+            flex-shrink: 0;
+            border-top: 1px solid #222;
+        }
+        .logo {
+            height: 30px;
+            width: auto;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="https://raw.githubusercontent.com/sankhanilbasu/mvp.qpi.money/main/QPi.money_animation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <footer>
+        <img src="https://raw.githubusercontent.com/sankhanilbasu/mvp.qpi.money/main/qioseon_logo_2026.jpeg" alt="Qioseon Labs Logo" class="logo">
+        <span>&copy; Qioseon Labs LLP 2026 All rights reserved</span>
+    </footer>
+</body>
+</html>
