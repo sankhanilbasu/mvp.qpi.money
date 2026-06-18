@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/qpimrbin/mvp.qpi.money/
-    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -a . $DEPLOYPATH
