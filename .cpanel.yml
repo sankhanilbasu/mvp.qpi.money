@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/qpimrbin/mvp.qpi.money/
+    - /bin/cp /home/qpimrbin/qpi-money-mvp/index.html $DEPLOYPATH
+    - /bin/cp /home/qpimrbin/qpi-money-mvp/style.css $DEPLOYPATH
