@@ -3,17 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QPi Money | MVP Platform Sandbox</title>
+    <title>QPi Money | MVP Animation Workspace</title>
     <style>
-        body { background: #111; color: #fff; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .card { text-align: center; border: 1px dashed #333; padding: 3rem; border-radius: 8px; }
-        h1 { color: #C86B45; margin-bottom: 0.5rem; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body { 
+            background: #0d1310; 
+            color: #f9f8f6; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            overflow: hidden;
+            padding: 2rem;
+        }
+        .display-container { 
+            text-align: center; 
+            border: 1px solid rgba(200, 107, 69, 0.2); 
+            padding: 2.5rem; 
+            border-radius: 12px; 
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+        h1 { 
+            color: #c86b45; 
+            font-size: 1.5rem;
+            font-weight: 400; 
+            margin-bottom: 1.5rem; 
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            background: #000;
+            aspect-ratio: 16 / 9; /* Adapts cleanly to high-res video metrics */
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .status-tag {
+            display: inline-block;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            color: #a3b1a9;
+            letter-spacing: 0.5px;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>MVP Environment Online</h1>
-        <p>System deployment pipeline mapping complete.</p>
+
+    <div class="display-container">
+        <h1>QPi.money Core Animation</h1>
+        
+        <div class="video-wrapper">
+            <video autoplay muted loop playsinline preload="auto">
+                <source src="animation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <div class="status-tag">
+            Live Stream Loop Node // Sovereignty Engine Sandbox
+        </div>
     </div>
+
 </body>
 </html>
